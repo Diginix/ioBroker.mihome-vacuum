@@ -1,39 +1,62 @@
 {
-  "name": "iobroker.mihome-vacuum",
-  "version": "1.1.6",
-  "description": "Control your mihome vacuum cleaner with ioBroker",
-  "keywords": [
-    "ioBroker",
-    "mihome-vacuum"
-  ],
-  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum",
-  "bugs": {
-    "url": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/issues"
+  "_from": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/tarball/master",
+  "_id": "iobroker.mihome-vacuum@1.1.7",
+  "_inBundle": false,
+  "_integrity": "sha512-7wivNDQ5O1AupMFGZEnYPWr2e2jJDH372uQqqH9PbIsebbasOYKIZzX+U+veL1iOWzGm77ANUOHoUUAYG7NQWw==",
+  "_location": "/iobroker.mihome-vacuum",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/tarball/master",
+    "rawSpec": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/tarball/master",
+    "saveSpec": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/tarball/master",
+    "fetchSpec": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/tarball/master"
   },
-  "license": "MIT",
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/tarball/master",
+  "_shasum": "343c25c25c2ca4842ec0f975fa0b3f19c4c20013",
+  "_spec": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/tarball/master",
+  "_where": "/",
   "author": {
     "name": "bluefox",
     "email": "dogafox@gmail.com"
   },
-  "main": "main.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum"
+  "bugs": {
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/issues"
   },
-  "scripts": {
-    "test": "npm run test:package && npm run test:unit",
-    "test:package": "mocha test/package --exit",
-    "test:unit": "mocha test/unit --exit",
-    "test:integration": "mocha test/integration --exit"
-  },
+  "bundleDependencies": false,
   "dependencies": {
     "@iobroker/adapter-core": "^1.0.3"
   },
+  "deprecated": false,
+  "description": "Control your mihome vacuum cleaner with ioBroker",
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "mocha": "^6.0.2",
-    "chai": "^4.1.2",
+    "@iobroker/testing": "^1.1.12",
     "axios": "^0.18.0",
-    "@iobroker/testing": "^1.1.12"
-  }
+    "chai": "^4.1.2",
+    "gulp": "^4.0.0",
+    "mocha": "^6.0.2"
+  },
+  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum",
+  "keywords": [
+    "ioBroker",
+    "mihome-vacuum"
+  ],
+  "license": "MIT",
+  "main": "main.js",
+  "name": "iobroker.mihome-vacuum",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum.git"
+  },
+  "scripts": {
+    "test": "npm run test:package && npm run test:unit",
+    "test:integration": "mocha test/integration --exit",
+    "test:package": "mocha test/package --exit",
+    "test:unit": "mocha test/unit --exit"
+  },
+  "version": "1.1.7"
 }

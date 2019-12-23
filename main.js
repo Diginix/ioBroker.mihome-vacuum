@@ -663,7 +663,7 @@ function init() {
             name: 'Spot Cleaning',
             type: 'boolean',
             role: 'button',
-            read: true,
+            read: false,
             write: true,
             desc: 'Start Spot Cleaning',
             smartName: 'Spot clean'
@@ -676,7 +676,7 @@ function init() {
             name: 'sound volume test',
             type: 'boolean',
             role: 'button',
-            read: true,
+            read: false,
             write: true,
             desc: 'let the speaker play sound'
         },
@@ -773,7 +773,7 @@ function newGen(model) {
                     name: "Resume paused zoneClean",
                     type: "boolean",
                     role: "button",
-                    read: true,
+                    read: false,
                     write: true,
                     desc: "resume zoneClean that has been paused before",
                 },
@@ -800,6 +800,34 @@ function newGen(model) {
                 max: 105,
                 states: {
                   105: "MOP"
+                }
+            }
+        });
+    }
+    if (model === 'roborock.vacuum.m1s') {
+        adapter.setObject('control.fan_power', {
+            type: 'state',
+            common: {
+                name: 'Suction power',
+                type: 'number',
+                role: 'level',
+                read: true,
+                write: true,
+                min: 101,
+                max: 104,
+                states: {
+                    101: 'QUIET',
+                    102: 'BALANCED',
+                    103: 'TURBO',
+                    104: 'MAXIMUM'
+                }
+            },
+            native: {}
+        });
+        adapter.extendObject('info.state', {
+            common: {
+                states: {
+                    18: "Room cleaning"
                 }
             }
         });
@@ -995,7 +1023,7 @@ adapter.on('message', function (obj) {
         let params;
 
         switch (obj.command) {
-            // call this with 
+            // call this with
             // sendTo('mihome-vacuum.0', 'sendCustomCommand',
             //     {method: 'method_id', params: [...] /* optional*/},
             //     callback

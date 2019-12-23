@@ -27,13 +27,13 @@ This adapter allows you control the Xiaomi vacuum cleaner.
 - [widget](#widget)
 - [bugs](#bugs)
 - [Changelog](#changelog)
- 
+
 ## Configuration
 Currently, finding the token is the biggest problem.
 The following procedures can be used:
 
 ### Easy token discovery on Android
-Just uninstall official MiHome App and install this one from [this page(russian)](http://www.kapiba.ru/2017/11/mi-home.html): 
+Just uninstall official MiHome App and install this one from [this page(russian)](http://www.kapiba.ru/2017/11/mi-home.html):
 - [Link APK](https://cloud.mail.ru/public/BSos/7YJhcLB2W/MiHome_5.4.13_vevs.apk).
 
 After installation and login with the same settings as by officiall app, you will find the token in the "Network information" for the device.
@@ -141,7 +141,7 @@ Example:
 ```
 [24117,26005,25767,27205,1], [24320,24693,25970,25843,1]
 ```
- 
+
 ### Send your own commands
 NOTE: This function should only be used by experts, as the sucker might be damaged by wrong commands
 
@@ -173,8 +173,8 @@ more methods and parameters you can find here ([Link](https://github.com/Meister
 ### Send custom commands with sendTo
 You can also send those custom commands from other adapters with `sendTo`. Usage with `method_id` and `params` as defined above:
 ```
-sendTo("mihome-vacuum.0", "sendCustomCommand", 
-    {method: "method_id", params: [...] /* optional*/}, 
+sendTo("mihome-vacuum.0", "sendCustomCommand",
+    {method: "method_id", params: [...] /* optional*/},
     function (response) { /* do something with the result */}
 );
 ```
@@ -182,9 +182,9 @@ The `response` object has two properties: `error` and (if there was no error) `r
 
 A couple of predefined commands can also be issued this way:
 ```
-sendTo("mihome-vacuum.0", 
-    commandName, 
-    {param1: value1, param2: value2, ...}, 
+sendTo("mihome-vacuum.0",
+    commandName,
+    {param1: value1, param2: value2, ...},
     function (response) { /* do something with the result */}
 );
 ```
@@ -224,6 +224,9 @@ Sorry, not yet finished.
 - Widget at the time without function
 
 ## Changelog
+### 1.1.7 (2019-11-26)
+* (Diginix) Adjustments for Mi Robot 1S.
+
 ### 1.1.6 (2018-12-06)
 * (JoJ123) Added fan speed for MOP (S50+).
 

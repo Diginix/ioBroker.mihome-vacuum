@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "mihome-vacuum",
-        "version": "1.1.6",
+        "version": "1.1.7",
         "news": {
+            "1.1.7": {
+                "en": "Adjustments for Mi Robot 1S",
+                "de": "Anpassungen für Mi Robot 1S",
+                "ru": "Настройки для Mi Robot 1S",
+                "pt": "Ajustes para Mi Robot 1S",
+                "nl": "Aanpassingen voor Mi Robot 1S",
+                "fr": "Réglages pour Mi Robot 1S",
+                "it": "Regolazioni per Mi Robot 1S",
+                "es": "Ajustes para Mi Robot 1S",
+                "pl": "Dostosowania dla Mi Robot 1S",
+                "zh-cn": "Mi Robot 1S的调整"
+            },
             "1.1.6": {
                 "en": "Added fan speed for MOP (S50+)",
                 "de": "Saugleistung für Wischmodus hinzugefügt (S50+)",
@@ -138,16 +150,16 @@
         },
         "title": "mihome-vacuum",
         "titleLang": {
-            "en": "Xiaomi Vacuum Cleaner control for v1 and s5",
-            "de": "Xiaomi Staubsaugersteuerung für v1 und s5",
-            "ru": "Управление пылесосом Xiaomi для v1 и s5",
-            "pt": "Controle de aspirador de pó Xiaomi para v1 e s5",
-            "nl": "Xiaomi Stofzuigerbediening voor v1 en s5",
-            "fr": "Xiaomi Vacuum Cleaner contrôle pour v1 et s5",
-            "it": "Controllo Xiaomi Aspirapolvere per v1 e s5",
-            "es": "Control de aspiradora Xiaomi para v1 y s5",
-            "pl": "Xiaomi Vacuum Cleaner do kontroli v1 i s5 ",
-            "zh-cn": "小米吸尘器控制v1和s5"
+            "en": "Xiaomi Vacuum Cleaner control for v1, 1S and s5",
+            "de": "Xiaomi Staubsaugersteuerung für v1, 1S und s5",
+            "ru": "Управление пылесосом Xiaomi для v1, 1S и s5",
+            "pt": "Controle de aspirador de pó Xiaomi para v1, 1S e s5",
+            "nl": "Xiaomi Stofzuigerbediening voor v1, 1S en s5",
+            "fr": "Xiaomi Vacuum Cleaner contrôle pour v1, 1S et s5",
+            "it": "Controllo Xiaomi Aspirapolvere per v1, 1S e s5",
+            "es": "Control de aspiradora Xiaomi para v1, 1S y s5",
+            "pl": "Xiaomi Vacuum Cleaner do kontroli v1, 1S i s5 ",
+            "zh-cn": "适用于v1、1S和s5的小米吸尘器控件"
         },
         "desc": {
             "en": "This adapter allows control Xiaomi vacuum cleaner",
@@ -243,6 +255,7 @@
                 "role": "button",
                 "name": "Start vacuum",
                 "type": "boolean",
+                "read": false,
                 "write": true
             },
             "native": {}
@@ -254,6 +267,7 @@
                 "role": "button",
                 "name": "Pause vacuum",
                 "type": "boolean",
+                "read": false,
                 "write": true
             },
             "native": {}
@@ -265,6 +279,7 @@
                 "role": "button",
                 "name": "Go home",
                 "type": "boolean",
+                "read": false,
                 "write": true
             },
             "native": {}
@@ -276,6 +291,7 @@
                 "role": "button",
                 "name": "Find",
                 "type": "boolean",
+                "read": false,
                 "write": true
             },
             "native": {}
@@ -446,7 +462,7 @@
                 "name": "Main brush lifetime reset",
                 "type": "boolean",
                 "write": true,
-                "read": true
+                "read": false
             },
             "native": {}
         },
@@ -471,7 +487,7 @@
                 "name": "Side brush lifetime reset",
                 "type": "boolean",
                 "write": true,
-                "read": true
+                "read": false
             },
             "native": {}
         },
@@ -496,7 +512,7 @@
                 "name": "Filter lifetime reset",
                 "type": "boolean",
                 "write": true,
-                "read": true
+                "read": false
             },
             "native": {}
         },
@@ -521,7 +537,7 @@
                 "name": "Sensors lifetime reset",
                 "type": "boolean",
                 "write": true,
-                "read": true
+                "read": false
             },
             "native": {}
         },

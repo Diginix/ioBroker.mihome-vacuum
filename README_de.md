@@ -62,7 +62,7 @@ Ohne Jailbreak:
 -	Sollte die Datei / der Ordner nicht zu finden sein, Backup mit iTunes statt mit 3utools machen
 -	Diese mit [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.10.1/SQLiteDatabaseBrowserPortable_3.10.1_English.paf.exe) öffnen
 -	Der 96-Stellige Hex Key befindet sich unter Browse Data  Table ZDEVICE  in der Spalte ganz Rechts ZTOKEN
--	Der 96-Stellige Hex Key muss nun in ein 32-Stelligen Key umgewandelt werden 
+-	Der 96-Stellige Hex Key muss nun in ein 32-Stelligen Key umgewandelt werden
 -	Über den [link](http://aes.online-domain-tools.com/) hier folgendes eintragen (Nur copy/paste, zwischenspeichern kann das Ergenis verfälschen)
 -	Input type: Text
 -	Input text: der 96-stellige Key
@@ -159,8 +159,8 @@ Mehr Mehtoden und Parameter können sie hier finden ([Link](https://github.com/M
 ### Eigene Kommandos per sendTo schicken
 Es ist auch möglich, per `sendTo` eigene Kommandos aus anderen Adaptern zu senden. Die Benutzung ist wie folgt:
 ```
-sendTo("mihome-vacuum.0", "sendCustomCommand", 
-    {method: "method_id", params: [...] /* optional*/}, 
+sendTo("mihome-vacuum.0", "sendCustomCommand",
+    {method: "method_id", params: [...] /* optional*/},
     function (response) { /* Ergebnis auswerten */}
 );
 ```
@@ -170,9 +170,9 @@ Das `response` Objekt hat zwei Eigenschaften: `error` und (sofern kein Fehler au
 
 Eine handvoll vordefinierter Kommandos kann auch folgendermaßen abgesetzt werden:
 ```
-sendTo("mihome-vacuum.0", 
-    commandName, 
-    {param1: value1, param2: value2, ...}, 
+sendTo("mihome-vacuum.0",
+    commandName,
+    {param1: value1, param2: value2, ...},
     function (response) { /* do something with the result */}
 );
 ```
@@ -212,6 +212,9 @@ Zur Zeit leider noch nicht fertig.
 - Widget zur Zeit ohne Funktion
 
 ## Changelog
+### 1.1.7 (2019-11-26)
+* (Diginix) Anpassungen für Modell Mi Robot 1S.
+
 ### 1.1.6 (2018-12-06)
 * (JoJ123) Saugleistung für Wischmodus hinzugefügt (S50+).
 
